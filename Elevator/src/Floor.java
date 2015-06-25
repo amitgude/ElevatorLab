@@ -1,6 +1,7 @@
 
 public class Floor {
-
+   
+	// current floor Number
 	private Integer currentFloorNumber;
 
 	public Integer getCurrentFloorNumber() {
