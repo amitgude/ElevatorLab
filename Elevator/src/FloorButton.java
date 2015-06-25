@@ -1,7 +1,7 @@
 
 public class FloorButton {
 
-	Integer value;
+	private Integer value;
 
 	public Integer getValue() {
 		return value;
@@ -10,4 +10,14 @@ public class FloorButton {
 	public void setValue(Integer value) {
 		this.value = value;
 	}
+	
+	
+	public void click( Integer floorNumber){
+		setValue(floorNumber);
+    }
+	
+	
+	
+	
+	
 }
