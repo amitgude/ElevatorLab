@@ -1,5 +1,5 @@
 
-public class elevator {
+public class Elevator {
      int current_pos ;
 
 	public int getCurrent_pos() {
