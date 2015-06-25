@@ -1,6 +1,6 @@
 
 public class ElevatorDoor {
-
+  // E;evator attributes
 	String color;
 	Boolean estatus;
 	
