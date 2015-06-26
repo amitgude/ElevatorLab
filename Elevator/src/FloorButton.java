@@ -1,7 +1,7 @@
 
 public class FloorButton {
 
-	//  attribute to store selected floor
+	//  attribute to store selected floor.
 	private Integer value;
 
 	// getter function for value attribute
