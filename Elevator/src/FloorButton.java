@@ -3,6 +3,8 @@ public class FloorButton {
 
 	private Integer value;
 
+	
+	
 	public Integer getValue() {
 		return value;
 	}
