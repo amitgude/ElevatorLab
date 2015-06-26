@@ -1,7 +1,7 @@
 
 public class Floor {
    
-	// current floor Number attribute
+	// current floor Number attribute.
 	private Integer currentFloorNumber;
 
 	// getter function for CurrentFLoorNumber
