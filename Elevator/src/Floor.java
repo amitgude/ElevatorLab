@@ -7,11 +7,9 @@ public class Floor {
 
 	public Floor(){
 		 currentFloorNumber  = 0 ; 
-		
 	}
 	
 	// getter function for CurrentFLoorNumber
-
 	public Integer getCurrentFloorNumber() {
 		return currentFloorNumber;
 	}
