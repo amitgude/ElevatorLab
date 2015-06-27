@@ -8,32 +8,41 @@ public class Elevator {
 	   System.out.println("1 2 3 4 5");
 	   System.out.println("6 7 8 9");
    }
+   
+   
+   
 	 
 	//this method for changing the floor
 	public void change(Floor f ,  FloorButton Fb)
 	{
-        int currentNo   =   f.getCurrentFloorNumber() ;
-        int  goON    = Fb.getValue() ;
+        int currentFloor        =   f.getCurrentFloorNumber() ;
+        int destinationFloor    =   Fb.getValue() ;
         
-        if(goON < 0  ){
-        	System.out.println("plz provide valid input" );
-        	return ; 
-        	
+        if(destinationFloor < 0 || destinationFloor > 9 ){
+        	System.out.println("Floor value cannot be below 0 or above 9"); 
         }
         
-        if( currentNo > goON )
+        if ( currentFloor == destinationFloor){
+        	System.out.println("You a currently on the same floor");
+        }
+        
+        if( currentFloor > destinationFloor )
         {
         	door.closedoor();
         	System.out.println("Moving  down");
-        	f.setCurrentFloorNumber(goON);
+        	f.setCurrentFloorNumber(destinationFloor);
+        	System.out.println("You are on "+ f.getCurrentFloorNumber() + "th Floor");
         	door.opendoor();
+        	door.closedoor();
                  	
         }        
         else{
         	door.closedoor();
         	System.out.println("Moving up");
-        	f.setCurrentFloorNumber(goON);
+        	f.setCurrentFloorNumber(destinationFloor);
+        	System.out.println("You are on "+ f.getCurrentFloorNumber() + "th Floor");
         	door.opendoor();
+        	door.closedoor();
         }
 		
 	}	    
