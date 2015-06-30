@@ -9,7 +9,14 @@ public class Elevator {
 	   System.out.println("6 7 8 9");
    }
    
-   
+   //Method to simulate movement of lift depending on the input of the user
+   public void liftMove(Floor f, Integer destinationFloor){
+	   door.closedoor();
+   	   f.setCurrentFloorNumber(destinationFloor);
+   	   System.out.println("You are on floor : "+ f.getCurrentFloorNumber());
+   	   door.opendoor();
+   	   door.closedoor();
+   }
    
 	 
 	//this method for changing the floor
@@ -33,24 +40,16 @@ public class Elevator {
         // current floor is higher
         else if( currentFloor > destinationFloor )
         {
-        	door.closedoor();
         	System.out.println("Moving  down");
-        	f.setCurrentFloorNumber(destinationFloor);
-        	System.out.println("You are on floor : "+ f.getCurrentFloorNumber());
-        	door.opendoor();
-        	door.closedoor();
+        	liftMove(f,destinationFloor);
                  	
         }   
         // condition check if the destination floor is greater then current floor number
         // that is lift has to go up 
         // current floor is lower
         else{
-        	door.closedoor();
         	System.out.println("Moving up");
-        	f.setCurrentFloorNumber(destinationFloor);
-        	System.out.println("You are on floor : "+ f.getCurrentFloorNumber());
-        	door.opendoor();
-        	door.closedoor();
+        	liftMove(f,destinationFloor);
         }
 		
 	}	    
