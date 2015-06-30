@@ -36,7 +36,7 @@ public class Elevator {
         	door.closedoor();
         	System.out.println("Moving  down");
         	f.setCurrentFloorNumber(destinationFloor);
-        	System.out.println("You are on "+ f.getCurrentFloorNumber() + "th Floor");
+        	System.out.println("You are on floor : "+ f.getCurrentFloorNumber());
         	door.opendoor();
         	door.closedoor();
                  	
@@ -48,7 +48,7 @@ public class Elevator {
         	door.closedoor();
         	System.out.println("Moving up");
         	f.setCurrentFloorNumber(destinationFloor);
-        	System.out.println("You are on "+ f.getCurrentFloorNumber() + "th Floor");
+        	System.out.println("You are on floor : "+ f.getCurrentFloorNumber());
         	door.opendoor();
         	door.closedoor();
         }
