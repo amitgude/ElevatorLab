@@ -8,19 +8,18 @@ public class Main {
  
 	// Object Initialization
 		Elevator elevator = new Elevator() ; 
-		Floor f = new Floor();
+		Floor floor = new Floor();
 		FloorButton Fb = new FloorButton()	;  
 		Scanner scan = new Scanner(System.in);
         Integer floorNumber;
      
-      
+    // lift on floor 0
+        floor.setCurrentFloorNumber(0);
+        System.out.println("Lift is on "+floor.getCurrentFloorNumber()+"th floor");
 		elevator.display();
-		
 		floorNumber = scan.nextInt();
-		
 		Fb.click(floorNumber);
-
-		elevator.change(f, Fb);
+		elevator.change(floor, Fb);
 
 
 
