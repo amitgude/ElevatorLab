@@ -2,7 +2,7 @@
 public class Elevator {
    private ElevatorDoor door = new ElevatorDoor(); 
    
-   // method to display floor options to the user
+   // method to display floor options to the user.
    public void display(){
 	   System.out.println("Select a Floor");
 	   System.out.println("1 2 3 4 5");
