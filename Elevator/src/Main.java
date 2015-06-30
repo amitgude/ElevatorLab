@@ -18,7 +18,7 @@ public class Main {
 		
 		floorNumber = scan.nextInt();
 		
-		Fb.setValue(floorNumber);
+		Fb.click(floorNumber);
 
 		elevator.change(f, Fb);
 
